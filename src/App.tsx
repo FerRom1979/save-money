@@ -1,10 +1,15 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Container from "./components/Container";
+import Routing from "./components/Routing";
 
 function App() {
   return (
-    <div>
-      <div>Hello world</div>
-    </div>
+    <BrowserRouter>
+      <Container>
+        <Routing />
+      </Container>
+    </BrowserRouter>
   );
 }
 
