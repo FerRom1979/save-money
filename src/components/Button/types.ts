@@ -2,5 +2,14 @@ import React from "react";
 
 export type ButtonProps = {
   text?: string;
-  icon?: React.ReactElement | null;
+  type: "submit" | "reset" | "button";
+  disabled?: boolean;
+  children?: React.ReactElement | null;
+  className?: string;
+  iconLeft?: boolean;
+  onClick?: () => void;
+};
+
+export type StyledButtonProps = {
+  iconLeft?: boolean;
 };

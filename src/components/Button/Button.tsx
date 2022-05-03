@@ -1,11 +1,32 @@
 import React from "react";
+import { StyledButton } from "./Styled.Button";
 import { ButtonProps } from "./types";
 
-const Button = ({ text = "Button", icon = null }: ButtonProps) => {
-  if (icon) {
-    return <div data-testid="button-icon">{icon}</div>;
-  }
-  return <div data-testid="button">{text}</div>;
+const Button = ({
+  text = "",
+  type,
+  disabled = false,
+  className = "",
+  children = null,
+  iconLeft = false,
+  onClick = () => "Click the button",
+}: ButtonProps) => {
+  return (
+    <div>
+      <StyledButton
+        data-testid="button"
+        type={type}
+        className={className}
+        onClick={onClick}
+        disabled={disabled}
+        iconLeft={iconLeft}
+      >
+        {iconLeft && children}
+        {text}
+        {!iconLeft && children}
+      </StyledButton>
+    </div>
+  );
 };
 
 export default Button;
