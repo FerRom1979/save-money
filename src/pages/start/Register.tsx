@@ -24,8 +24,12 @@ function Register() {
       <div>
         <Title text="Begin with" fontSize={13} />
         <div className="wrapper-redes">
-          <Button icon={<BsFacebook size={24} />} />
-          <Button icon={<BsGoogle size={24} />} />
+          <Button type="button" className="btn-icon">
+            <BsFacebook size={24} />
+          </Button>
+          <Button type="button" className="btn-icon">
+            <BsGoogle size={24} />
+          </Button>
         </div>
       </div>
       <div>
