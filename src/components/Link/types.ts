@@ -1,8 +1,8 @@
 import React from "react";
 
 export type LinkProps = {
-  routed: string;
+  routed?: string;
   className?: string;
   text?: string;
-  children?: React.ReactElement | null;
+  children?: React.ReactElement | string;
 };
