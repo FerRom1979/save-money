@@ -6,7 +6,12 @@ export const StyledButton = styled.button<StyledButtonProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  padding: 4px 20px;
+  border-radius: 20px;
+  background: blue;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
   span {
     margin: 0 5px 0 5px;
   }
@@ -14,5 +19,16 @@ export const StyledButton = styled.button<StyledButtonProps>`
   &.btn-icon {
     border: none;
     background: transparent;
+  }
+  &.contained {
+  }
+  &.outlined {
+    background: #fff;
+    color: #000;
+  }
+  &.text {
+    border: none;
+    background-color: transparent;
+    color: #000;
   }
 `;
