@@ -10,7 +10,7 @@ const LinkComponent = ({
   text = "",
 }: LinkProps) => {
   return (
-    <StyledLink to={routed} className={className}>
+    <StyledLink to={routed} className={className} data-testid="link">
       {text}
       {children}
     </StyledLink>
