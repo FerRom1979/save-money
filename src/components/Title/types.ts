@@ -3,6 +3,7 @@ export interface ITitleProps {
   variant?: "h1" | "h2";
   fontSize?: number;
   color?: string;
+  className?: string;
 }
 
 export interface IStyledTitlesProps {

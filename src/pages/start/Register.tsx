@@ -19,7 +19,7 @@ function Register() {
         <LinkComponent routed="/" text="Sing up" className="btn-contained" />
       </div>
       <div>
-        <LinkComponent routed="/" text="Sing in" className="btn-text" />
+        <LinkComponent routed="/login" text="Sing in" className="btn-text" />
       </div>
       <div>
         <Title text="Begin with" fontSize={13} />
