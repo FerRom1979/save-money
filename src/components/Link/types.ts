@@ -5,4 +5,10 @@ export type LinkProps = {
   className?: string;
   text?: string;
   children?: React.ReactElement | string;
+  color?: string;
+  fontSize?: number;
+};
+
+export type StyledLinkProps = {
+  fontSize?: number;
 };
