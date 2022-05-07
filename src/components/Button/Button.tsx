@@ -12,20 +12,18 @@ const Button = ({
   onClick = () => "Click the button",
 }: ButtonProps) => {
   return (
-    <div>
-      <StyledButton
-        data-testid="button"
-        type={type}
-        className={className}
-        onClick={onClick}
-        disabled={disabled}
-        iconLeft={iconLeft}
-      >
-        {iconLeft && children}
-        {text}
-        {!iconLeft && children}
-      </StyledButton>
-    </div>
+    <StyledButton
+      data-testid="button"
+      type={type}
+      className={className}
+      onClick={onClick}
+      disabled={disabled}
+      iconLeft={iconLeft}
+    >
+      {iconLeft && children}
+      {text}
+      {!iconLeft && children}
+    </StyledButton>
   );
 };
 
