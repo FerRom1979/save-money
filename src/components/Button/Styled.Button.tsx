@@ -12,6 +12,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   color: #fff;
   font-size: 16px;
   font-weight: bold;
+
   span {
     margin: 0 5px 0 5px;
   }

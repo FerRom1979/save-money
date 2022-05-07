@@ -5,7 +5,7 @@ import { WrapperRegister } from "./Styled.StartPages";
 import Button from "../../components/Button";
 import { BsFacebook, BsGoogle } from "react-icons/bs";
 
-function Register() {
+function RegisterContainer() {
   return (
     <WrapperRegister>
       <div>
@@ -16,7 +16,11 @@ function Register() {
         />
       </div>
       <div>
-        <LinkComponent routed="/" text="Sing up" className="btn-contained" />
+        <LinkComponent
+          routed="/register"
+          text="Sing up"
+          className="btn-contained"
+        />
       </div>
       <div>
         <LinkComponent routed="/login" text="Sing in" className="btn-text" />
@@ -39,4 +43,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default RegisterContainer;
