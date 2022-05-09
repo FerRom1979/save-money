@@ -3,19 +3,7 @@ import styled from "styled-components";
 export const StyledLogin = styled.div`
   background: #000;
   height: 100vh;
-  input {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #6066ff;
-    box-sizing: border-box;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 20px;
 
-    ::placeholder {
-      font-size: 20px;
-    }
-  }
   .wrapper-login {
     margin-top: 30px;
     display: flex;
@@ -29,11 +17,6 @@ export const StyledLogin = styled.div`
     font-weight: 700;
     line-height: 53px;
     margin-bottom: 40px;
-  }
-  .wrapper-field {
-    width: 352px;
-    height: 42px;
-    margin-bottom: 20px;
   }
   .btn-login {
     margin-top: 30px;
