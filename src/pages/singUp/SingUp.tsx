@@ -4,6 +4,7 @@ import Title from "../../components/Title/Title";
 import Button from "../../components/Button/Button";
 import LinkComponent from "../../components/Link/LinkComponent";
 import { StyledSingUp } from "./Styled.SingUp";
+import Input from "../../components/Input";
 
 const SingUp = () => {
   return (
@@ -17,18 +18,18 @@ const SingUp = () => {
               fontSize={44}
               className="title"
             />
-            <div className="wrapper-field">
-              <input type="text" placeholder="name" />
-            </div>
-            <div className="wrapper-field">
-              <input type="text" placeholder="email" />
-            </div>
-            <div className="wrapper-field">
-              <input type="password" placeholder="password" />
-            </div>
-            <div className="wrapper-field">
-              <input type="password" placeholder="confirm password" />
-            </div>
+            <Input type="text" placeholder="name" className="wrapper-field" />
+            <Input type="email" placeholder="email" className="wrapper-field" />
+            <Input
+              type="password"
+              placeholder="password"
+              className="wrapper-field"
+            />
+            <Input
+              type="password"
+              placeholder="confirm password"
+              className="wrapper-field"
+            />
 
             <Button text="Register" type="submit" className="btn-login" />
 
